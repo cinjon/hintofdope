@@ -1,0 +1,169 @@
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+}
+
+.info {
+    text-align: center;
+    padding-bottom:20px;
+}
+.topline {
+    font-weight: bold;
+    margin-bottom:25px;
+    font-size:60px;
+}
+.m-topline {
+    font-weight: bold;
+    font-size:35px;
+}
+.byline {
+    font-size:28px;
+}
+.m-byline {
+    font-size:20px;
+}
+
+.message {
+    color: rgba(9, 14, 207, .75) !important;
+    text-align:center !important;
+    font-size:28px !important;
+    font-weight:bold;
+    margin-top:25px;
+}
+
+.tel-input {
+    width: 59.333333%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input.phone {
+    font-size:37px;
+    height:60px;
+    text-align:center;
+}
+.phone-icon {
+    font-size:2em;
+    position:relative;
+    top:3px;
+}
+.m-phone {
+    font-size:1em;
+}
+
+.m-submit {
+    font-size:9px;
+}
+.white-space-normal {
+    white-space: normal;
+}
+
+.page {
+    margin-top:20px;
+}
+
+.content {
+    height: 90%;
+    /*padding-top:50px;*/
+    width: 90%;
+    margin: auto;
+}
+
+.content-text {
+    /*margin-top:25px;*/
+    height: 80%;
+    font-size: 25px;
+}
+
+.visible {
+    visibility:visible;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(9, 14, 207, .5);
+}
+:-moz-placeholder {
+    color: rgba(9, 14, 207, .5);
+}
+::-moz-placeholder {
+    color: rgba(9, 14, 207, .5);
+}
+:-ms-input-placeholder {
+    color: rgba(9, 14, 207, .5);
+}
+
+/* For Angular-UI Bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+
+/* Home page */
+
+body {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: none;
+}
+
+.full {
+  /* background: url(../img/lake-compressed.jpg) no-repeat; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+#background {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.input-group-addon {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.btn-go {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.msg-label-wrapper {
+    margin-top: 20px;
+    text-align: center;
+    position:relative;
+}
+
+span.label {
+    font-size: 15px;
+}
+
+@media only screen and (max-device-width: 750px) {
+    .tel-input {
+        width: 100%;
+    }
+
+    .byline {
+        font-size: 26px;
+    }
+
+    input.phone {
+        font-size: 26px;
+    }
+}
