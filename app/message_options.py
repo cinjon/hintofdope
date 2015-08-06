@@ -10,8 +10,8 @@ r = ty_enum.get('reintro')
 g = ty_enum.get('growth')
 
 options = [
-    {'type':i, 'body':"Let's get dis shit kickin' wit da dope. here's da word - you get yo dope every one to two weeks, and if you decide you no longer want yo dope, reply DOPE to this number. yaheard"},
+    {'type':i, 'body':"Yo homie coming atchu from the 213! Every 1-2 weeks we’ll drop dope ass rhymes on ya fone. If y'all no longer want ya dope (why you frontin??), reply DOPE to this message."},
     {'type':d, 'body':"Dopity dop."},
-    {'type':r, 'body':"Hi there, welcome back to Hints of Hope. We're so honored to be your Mercury of inspiration."},
+    {'type':r, 'body':"Welcome back gangsta! Fresh hit of dope coming right up."},
     {'type':g, 'body':'Help your friends and loved ones by sending them a Hint of Hope @ hintofhope.today! ... Or just reply to this message with their phone number. We gotchu.'},
     ]
