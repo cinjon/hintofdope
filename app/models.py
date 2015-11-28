@@ -88,7 +88,7 @@ class Message(db.Model):
     def get_body(self, signature=True):
         body = message_options.options[self.selection]['body']
         if signature:
-            body += '\n- Hint Of Hope'
+            body += '\n- Hint Of Dope'
         return body
 
     def send(self, phone=None):
@@ -116,16 +116,12 @@ def create_message(phone_id, selection=None, commit=True):
 def filter_options(ty):
     return [option for option in message_options.options if option['type'] == ty]
 
-first_d_message = 4 # first death msg
 def get_option_type(messages):
     return message_options.d
 
 def get_selection(phone, option_type=None):
     """
-    Gets the next selection for the given phone
-    If this is the 1st, 2nd, or 3rd message, gets a hopeful msg
-    If this is the 4th message, gets a death msg
-    Tries to keep ~= the counts per message (for a given phone).
+    Gets the next selection for the given phone. Always gets a Dope msg.
     """
     def check_selection(option_type, selection_type):
         if option_type == None:

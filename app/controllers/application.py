@@ -27,8 +27,8 @@ def twilio_receiver():
     from_number = request.values.get('From', None)
     body = request.values.get('Body', None)
     resp = twilio.twiml.Response()
-    if body != 'HOPE':
-        resp.message("Sorry, we didn't recognize your message.")
+    if body != 'DOPE':
+        resp.message("Whatchu say?")
         try:
             app.flask_app.logger.debug('Message from %s: %s' % (from_number, body))
         except Exception, e:
@@ -47,18 +47,18 @@ def save_phone():
         if phone_string and len(phone_string) == 10:
             has_phone, phone = app.models.get_or_create_phone(phone_string)
         else:
-            return app.utility.xhr_response({'success':False, 'msg':"Please submit a complete phone number."}, 200)
+            return app.utility.xhr_response({'success':False, 'msg':"Those digits don't work fool."}, 200)
 
         if has_phone and phone.deleted:
-            return app.utility.xhr_response({'success':False, 'msg':"Thanks for re-trying to connect with us. If you really are ready for more inspiration, email us at cinjon.resnick@gmail.com."}, 200)
+            return app.utility.xhr_response({'success':False, 'msg':"Aight, if you really want da Dope again, email the DinoSaur at dino.mihalopoulos@gmail.com."}, 200)
         elif has_phone:
-            return app.utility.xhr_response({'success':False, 'msg':'Thanks, but we already have this number. Hope is coming.'}, 200)
+            return app.utility.xhr_response({'success':False, 'msg':"We alrdy got those digits son. Dope on its way!"}, 200)
         else:
             phone.send_intro()
-            return app.utility.xhr_response({'success':True, 'msg':'Thanks. Hope is on the way.'}, 200)
+            return app.utility.xhr_response({'success':True, 'msg':'Dope! Coming atcha boy.'}, 200)
     except Exception, e:
         app.flask_app.logger.debug(e)
-        return app.utility.xhr_response({'success':False, 'msg':'Apologies. We misheard you. Please submit again.'}, 200)
+        return app.utility.xhr_response({'success':False, 'msg':"We messin'. Tell me those digits again yo."}, 200)
 
 # @app.flask_app.route('/google34d3fe92d155a2aa.html')
 # def google_verification(**kwargs):
