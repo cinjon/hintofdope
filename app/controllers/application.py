@@ -34,9 +34,9 @@ def twilio_receiver():
         except Exception, e:
             pass
     elif app.models.delete_phone(from_number):
-        resp.message("We're awfully sorry to see you go, but we understand that sometimes hope isn't what we need. If that changes, don't be a stranger - we're here for you.")
+        resp.message("No biggie son. We be here when you craving that good shit.")
     else:
-        resp.message("Apologies, there seems to have been a mistake. Please try again.")
+        resp.message("Shit ain't right. Do that again nig.")
     return str(resp)
 
 @app.flask_app.route('/save-phone', methods=['POST'])
