@@ -10,12 +10,9 @@ r = ty_enum.get('reintro')
 g = ty_enum.get('growth')
 
 options = [
-    {'type':i, 'body':"Yo homie coming atchu from the 213! Every 1-2 weeks we’ll drop dope ass rhymes on ya fone. If y'all no longer want ya dope (why you frontin??), reply DOPE to this message."},
+    {'type':i, 'body':"Yo homie coming atchu from the 213! Every 1-2 weeks we'll drop dope ass rhymes on ya fone. If y'all no longer want ya dope (why you frontin??), reply DOPE to this message."},
     {'type':r, 'body':"Welcome back gangsta! Fresh hit of dope coming right up."},
-    {'type':g, 'body':'Help your friends and loved ones by sending them a Hint of Hope @ hintofhope.today! ... Or just reply to this message with their phone number. We gotchu.'},
-    {'type':d, 'body':"When it comes to sex, I’m similar to the Thrilla in Manila. Honeys call me Bigga the condom filler. Whether it’s stiff tongue or stiff dick, Biggie squeeze it to make shit fit, now check this shit."},
 
-    {'type':d, 'body':"When it comes to sex, I’m similar to the Thrilla in Manila. Honeys call me Bigga the condom filler. Whether it’s stiff tongue or stiff dick, Biggie squeeze it to make shit fit, now check this shit."},
     {'type':d, 'body':"She mad because what we had didn’t last. I’m glad because her cousin let me hit the ass."},
     {'type':d, 'body':"I got the cleanest meanest penis. Ya never seen this stroke of genius."},
     {'type':d, 'body':"Hit you with my dick, make your kidneys shift."},
